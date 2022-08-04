@@ -1,0 +1,171 @@
+{
+    "9f3acfab-8ad4-4821-93d1-0ead6800df71": {
+        "uid": "9f3acfab-8ad4-4821-93d1-0ead6800df71",
+        "name": "Test Calendar",
+        "code": "1234",
+        "created": 1659396229093,
+        "entries": {
+            "19-8-2022": [
+                {
+                    "text": "My first entry",
+                    "start": "15:07",
+                    "end": "16:08"
+                },
+                {
+                    "text": "Get on with the project",
+                    "start": "16:09"
+                }
+            ],
+            "18-7-2022": [
+                {
+                    "text": "This is a more realistic time for me to work on my project, just adding more text to see if it works",
+                    "start": "15:00",
+                    "end": "03:00"
+                }
+            ],
+            "28-8-2022": [
+                {
+                    "text": "new one",
+                    "start": "10:00"
+                },
+                {
+                    "text": "second one",
+                    "start": "11:30",
+                    "end": "12:20"
+                }
+            ],
+            "26-8-2022": [
+                {
+                    "text": "<script>alert(\"XSS test\")</script>"
+                }
+            ],
+            "22-8-2022": [
+                {
+                    "text": "test2",
+                    "start": "00:00",
+                    "end": "12:33"
+                },
+                {
+                    "text": "test5",
+                    "start": "09:46",
+                    "end": "12:00"
+                },
+                {
+                    "text": "test4",
+                    "start": "09:46"
+                },
+                {
+                    "text": "test3",
+                    "start": "10:45"
+                },
+                {
+                    "text": "test1",
+                    "start": "20:25",
+                    "end": "17:29"
+                }
+            ]
+        }
+    },
+    "acca1187-92c3-4154-856b-e1d6248a7227": {
+        "uid": "acca1187-92c3-4154-856b-e1d6248a7227",
+        "name": "Sam Barnett",
+        "code": "1234",
+        "created": 1659397429489,
+        "entries": {
+            "12-7-2022": [
+                {
+                    "text": "not my birthday"
+                },
+                {
+                    "text": "compat test",
+                    "start": "17:56"
+                }
+            ],
+            "11-7-2022": [
+                {
+                    "text": "my birthday"
+                }
+            ],
+            "28-7-2022": [
+                {
+                    "text": "this is an entry",
+                    "start": "12:20",
+                    "end": "12:30"
+                }
+            ],
+            "3-8-2022": [
+                {
+                    "text": "the current time when writing this",
+                    "start": "04:58",
+                    "end": "04:58"
+                }
+            ]
+        }
+    },
+    "713b9546-eb73-4fe2-8029-4f977cdfa986": {
+        "uid": "713b9546-eb73-4fe2-8029-4f977cdfa986",
+        "name": "Test Calendar",
+        "code": "5678",
+        "created": 1659397333122,
+        "entries": {
+            "16-6-2021": [
+                "Example of a date a long time ago"
+            ],
+            "16-7-2022": [
+                "lots",
+                "off",
+                "entries",
+                "to",
+                "see",
+                "if",
+                "the",
+                "program",
+                "can",
+                "handle",
+                "it"
+            ]
+        }
+    },
+    "ca940e0d-b1ac-46f3-9972-37ea91802a5c": {
+        "uid": "ca940e0d-b1ac-46f3-9972-37ea91802a5c",
+        "name": "Delete Me",
+        "code": "0001",
+        "created": 1000000000000,
+        "entries": {
+            "17-8-2022": [
+                {
+                    "text": "delete this one too",
+                    "start": "00:00",
+                    "end": "23:00"
+                }
+            ],
+            "12-7-2022": [
+                {
+                    "text": "don't delete this one",
+                    "end": "01:00"
+                }
+            ]
+        }
+    },
+    "10d3a0bd-6014-4467-bd43-7d27d0d90fba": {
+        "uid": "10d3a0bd-6014-4467-bd43-7d27d0d90fba",
+        "name": "newcalendar",
+        "code": "9876",
+        "created": 1659589151994,
+        "entries": {}
+    },
+    "7a39b04c-70ee-48e5-8ca6-f77d11e9adb0": {
+        "uid": "7a39b04c-70ee-48e5-8ca6-f77d11e9adb0",
+        "name": "Test Calendar",
+        "code": "3746",
+        "created": 1659589151999,
+        "entries": {}
+    },
+    "2f714298-c9f3-4be3-9fa6-3489b6d1186a": {
+        "uid": "2f714298-c9f3-4be3-9fa6-3489b6d1186a",
+        "name": "newcalendar1",
+        "code": "9667",
+        "created": 1659589152005,
+        "entries": {}
+    }
+}

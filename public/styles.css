@@ -1,0 +1,265 @@
+:root {
+    --min-size: 100px;
+    --max-size: 256px;
+}
+:root{
+    --min-size-grid:  calc(7 * var(--min-size));
+    --min-size-entry: calc(6 * var(--min-size));
+}
+
+body {
+    background-color: #fffffe;
+    font-family: Courier, monospace;
+    text-align: center;
+}
+
+#calendar-select {
+    background-color:#fffffe;
+    width: 40%;
+    min-width: 400px;
+    aspect-ratio: 16/9;
+
+    border: 3px solid #094067;
+    border-radius: 20px;
+
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+#calendar-form {
+    margin: 10%;
+    margin-bottom: 5%;
+    width: 80%;
+}
+
+.calendar-form-input {
+    width: 100%;
+    height: max(2.5vw, 32px);
+    padding-left: 12px;
+    margin-bottom: 4px;
+}
+
+#calendar-code-input {
+    justify-content: left;
+}
+
+#calendar-select-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+#calendar-load-but {
+    margin-right: 4px;
+}
+
+#calendar-select-warning {
+    color:red;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+
+#exit-but {
+    font-weight: 600;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+#calendar {
+    justify-content: center;
+    max-height: 95vh;
+}
+
+#calendar-details {
+    font-size: max(2vw, 28px);
+    font-weight: 600;
+    color: #094067;
+
+    display:flex;
+    justify-content: center;
+    min-width: calc(5 * var(--min-size));
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+#calendar-name {
+    padding-left: 4%;
+    padding-right: 1%;
+}
+
+#calendar-code, #calendar-vis {
+    font-size: max(0.7vw, 9px);
+    margin-left: 2px;
+    justify-content: left;
+    align-self: flex-end;
+    padding-bottom: 12px;
+}
+#calendar-vis {
+    justify-content: right;
+}
+
+#month-header {
+    font-size: max(1.5vw, 20px);
+    font-weight: bold;
+    color: #5f6c7b;
+
+    min-width: calc(5 * var(--min-size));
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.month-adj-but {
+    font-size: max(2vw, 24px);
+    font-weight: bold;
+    padding: 0;
+}
+#month-adj-left {
+    transform: scaleX(-1);
+}
+
+.day {
+    font-size: max(1.2vw, 18px);
+    font-weight: bold;
+    color: #5f6c7b;
+
+    width: 7%;
+    min-width: var(--min-size);
+    max-width: var(--max-size);
+}
+
+#grid {
+    margin-bottom:32px;
+}
+
+.cell-row, .month-row {
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+}
+.cell-row::-webkit-scrollbar {
+    display: none;
+}
+
+
+.cell {
+    font-weight: 500;
+
+    width: 7%;
+    min-width: var(--min-size);
+    max-width: var(--max-size);
+    aspect-ratio: 1;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: 3px solid transparent;
+}
+
+.cell-hover:hover {
+    border: 3px dotted black;
+}
+
+.cell-highlight {
+    border: 3px solid #094067 !important; 
+    /* bit hackey, overrides cell:hover*/
+}
+
+.cell-color-1 {
+    background-color: #eeeeec;
+    color: #6194b9;
+}
+.cell-color-2 {
+    background-color: #6194b9;
+    color: #eeeeec;
+}
+
+.date {
+    font-size: max(0.9vw, 14px);
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.cell-inner {
+    font-size: max(0.8vw, 12px);
+    font-weight: 500;
+    color: #262a31;
+    hyphens: auto;
+    
+    height: 80%;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+}
+.cell-inner::-webkit-scrollbar {
+    display: none;
+}
+
+.cell-time-div {
+    font-weight: 600;
+}
+.cell-entry {
+    border-bottom: 2px dashed #4c5662;
+    margin-bottom: 6px;
+}
+
+
+#entries {
+    padding-bottom:64px;
+}
+
+#entry-info, #entry-warning {
+    font-size: x-large;
+    color:#094067;
+
+    justify-content: center;
+    margin-bottom: 2px;
+}
+#entry-warning {
+    margin-left: 24px;
+}
+   
+#entry-form {
+    padding-left: 4px;
+    padding-right: 8px;
+}
+
+.entry-box {
+    margin-bottom: 8px;
+}
+
+.entry-time-box, .entry-label, .entry-label-long {
+    margin-right: 4px;
+    min-width: 110px;
+}
+
+.entry-label, .entry-label-long {
+    text-align: start;
+}
+
+.entry-input-box, .entry-label-long {
+    border-width: 1px;
+    border-radius: 5px;
+    min-width: var(--min-size-entry);
+}
+.entry-input-box:hover {
+    background-color: #eee;
+}
+
+.entry-remove-but, .entry-label-buffer {
+    font-weight: 600;
+    
+    min-width: var(--min-size);
+    margin-left: 4px;
+}
+
+#entry-add-but {
+    font-weight: 600;
+    color:#094067;
+    
+    min-width: var(--min-size-entry);
+}
+#entry-submit-but {
+    min-width: var(--min-size);
+    margin-left: 4px;
+}

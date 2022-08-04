@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Using bootstrap for an adaptive webpage -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <title>Calendar App - Sam Barnett</title>
+        
+        <link rel="stylesheet" href="public/styles.css">
+        <script defer type="text/javascript" src="public/calendar.js"></script>
+    </head>
+    <body>
+        <div id="calendar-select">
+            <div id="calendar-form">
+                <input type="text" id="calendar-name-input" class="calendar-form-input" placeholder="Calendar Name"><br>
+                <input type="text" id="calendar-code-input" class="calendar-form-input" placeholder="Calendar Code"><br>
+            </div>
+            <div id="calendar-select-buttons">
+                <button id="calendar-load-but" class="btn btn-lg btn-outline-primary" onclick="calendarAction(loadCalendar)">Load Calendar</button>
+                <button id="calendar-new-but" class="btn btn-lg btn-outline-secondary" onclick="calendarAction(newCalendar)">Create New Calendar</button>
+            </div>
+            <div id="calendar-delete-buttons">
+                <button id="calendar-delete-but" class="btn btn-sm btn-outline-danger" onclick="deleteCalenderBut()">Delete Calendar</button>
+            </div>
+            <div id="calendar-select-warning"></div>
+        </div>
+        <div id="calendar" class="container-fluid">
+            <button id="exit-but" class="btn" onclick="exitBut()">Exit</button>
+            <!-- Calendar Name and Month Adjuster -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-7" id="calendar-details">
+                    <div id="calendar-name"></div>
+                    <div id="calendar-code"></div>
+                </div>
+            </div>
+            <div id="month-row" class="row flex-nowrap d-flex justify-content-center">
+                <button id="month-adj-left" class="col-md-1 month-adj-but btn" onclick="monthAdj(-1)">➜</button>
+                <div id="month-header" class="col-md-4"></div>
+                <button id="month-adj-right" class="col-md-1 month-adj-but btn" onclick="monthAdj(1)">➜</button>
+            </div>
+
+            <!-- Day headers -->
+            <div id="days" class="row flex-nowrap d-flex justify-content-center">
+                <div class="col-md-1 day">Mon</div>
+                <div class="col-md-1 day">Tue</div>
+                <div class="col-md-1 day">Wed</div>
+                <div class="col-md-1 day">Thr</div>
+                <div class="col-md-1 day">Fri</div>
+                <div class="col-md-1 day">Sat</div>
+                <div class="col-md-1 day">Sun</div>
+            </div>
+
+            <!-- the grid div is dynamically created from the calendar data received -->
+            <div id="grid"></div>
+            <div id="entries">
+                <div class="flex-nowrap d-flex justify-content-center">
+                    <div id="entry-info"></div>
+                    <div id="entry-warning"></div>
+                </div>
+                <div id="entry-labels" class="row flex-nowrap d-flex justify-content-center">
+                    <div class="col-md-1 entry-label">Start</div>
+                    <div class="col-md-1 entry-label">End</div>
+                    <div class="col-md-4 entry-label-long">Entry Text</div>
+                    <div class="col-md-1 entry-label-buffer"></div>
+                </div>
+                <div id="entry-form"></div>
+                <div id="entry-add-div" class="row flex-nowrap d-flex justify-content-center"></div>
+            </div>
+        </div>
+
+    </body>
+</html>
